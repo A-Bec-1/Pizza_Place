@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Crust, Sauce, Cheese</title>
+		<style type = "text/css">
+			@import url(designs.css);
+		</style>
+	</head>	
+	<body>
+		<!--Top of Page-->
+		<a href = "Home.html">
+			<h1 id = "pizzaHead">Pizza Place</h1>
+		</a>
+		<HR>
+		<BR>
+		<!--Ordering-->
+		<h2>Ordering Pizza!</h2>
+		<form name = "Base" method = "post" action = "ToppingsDel.html">
+			<FIELDSET>
+				<LEGEND>Base</LEGEND>
+				<!--Crust-->
+                <label name = "CrustList" for = "CrustList">Crust: </label>
+                <input list = "Crusts" name = "CrustList" id = "CrustList" required>
+				<datalist id = "Crusts">
+					<option value = "Regular"></option>
+					<option value = "Stuffed"></option>
+					<option value = "Pretzel"></option>
+					<option value = "Cracker"></option>
+					<option value = "Garlic"></option>
+					<option value = "Deep"></option>
+					<option value = "Thin"></option>
+				</datalist>
+				<table class = "pricingTable">
+					<TH>All Built Pizzas are $20</TH>
+				</table>
+				<HR>
+				<!--Sauce-->
+                <label name = "SauceList" for = "SauceList">Sauce: </label>
+                <input list = "Sauces" name = "SauceList" id = "SauceList">
+				<datalist id = "Sauces">
+					<option value = "Regular"></option>
+					<option value = "Marinara"></option>
+					<option value = "Salsa"></option>
+					<option value = "Ranch"></option>
+					<option value = "BBQ"></option>
+					<option value = "Queso"></option>
+				</datalist>
+				<HR>
+				<!--Cheese-->
+                <label name = "Cheese" for = "Cheese">Cheese: </label>
+                <input type = "checkbox" name = "Cheese" id = "Cheese">Parmasean
+                <input type = "checkbox" name = "Cheese" id = "Cheese">Mozzerella
+                <input type = "checkbox" name = "Cheese" id = "Cheese">Italian Blend
+                <input type = "checkbox" name = "Cheese" id = "Cheese">Mexican Mix
+                <input type = "checkbox" name = "Cheese" id = "Cheese">Pepperjack
+                <input type = "checkbox" name = "Cheese" id = "Cheese">Cheddar
+                <input type = "checkbox" name = "Cheese" id = "Cheese">Extra Sharp Cheddar
+				<BR>
+				<table class = "pricingTable">
+					<TH>
+						<TD>Additional Cheese Sauces Cost $1.99</TD>
+					</TH>
+				</table>
+				<HR>
+				<input type = "submit" name = "Next" value = "Next" required>
+				<input type = "reset" name = "resetIt">
+			</FIELDSET>
+		</form>
+		<P>
+			*Note: All pizzas are 20in*
+		</P>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+
+TABLE{
+    border:2.5px solid black;
+    width:50%;
+}
+
+.pricingTable{
+    border:0.5px solid black;
+    width:auto;
+}
+
+#pizzaHead{
+    font-size:25pt;
+    color:black;
+    background-color: rgb(239, 206, 162);
+}
+
+
+.custom-hr{
+    background-color:white;
+    height: 3px;
+}
+
+
+span{
+    width:100%
+}
+
+
+.button{
+    padding:0px;
+    margin:20px;
+    text-align: center;
+    background-color:rgb(255, 68, 0);
+    border:2px solid black;
+    font-size:20pt;
+}
+
+#sidebar{
+    float:right;
+    background-color: rgb(255, 255, 255);
+    width:20%;
+    height:300px;
+    box-sizing:border-box;
+}
+#content{
+    float:left;
+    width:80%;
+    height:300px;
+    box-sizing:border-box;
+}
+.clearfix{
+    clear:both;
+}
+.flexbox{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    /*justify-content:flex-end;*/
+    /*justify-content:flex-start;*/
+    /*justify-content:space-between;*/
+    /*justify-content:space-around;*/
+    justify-content:space-evenly;
+}
+.website-head{
+    background-color: rgb(239, 206, 162);
+}
+.margin-25{
+    margin:25px;
+}
+a {
+    color:black;
+    text-decoration: none;
+  }
+a:visited{
+    color:black;
+}

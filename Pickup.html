@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>  
+  <head>
+		<title>Pick-Up</title>
+		<style type = "text/css">
+			@import url(designs.css);
+		</style>
+	</head>
+	<body>
+		<!--Top of Page-->
+		<a href = "Home.html">
+			<h1 id = "pizzaHead">Pizza Place</h1>
+		</a>
+		<HR>
+		<BR>
+		<!--First:-->
+		<CENTER>
+			<P>
+				*Note: All pizzas are 20in*
+			</P>
+			<TABLE>
+				<CAPTION>Add Item:</CAPTION>
+				<TH>
+					<TD>
+						<a href = "SpecialtyPic.html">Specialty Pizzas</a>
+					</TD>
+					<TD>
+						<a href = "BasePic.html">Pizza Build</a>
+					</TD>
+				</TH>
+			</TABLE>
+		</CENTER>
+		<!--Order Finish Form:-->
+		<HR>
+		<form name = "finish" method = "post" action = "Certificate.html">
+			<FIELDSET>
+				<LEGEND>Credentials</LEGEND>
+				<label name = "card" for = "card">Card Number: </label>
+				<input type = "number" name = "card" id = "card" required>
+				<FIELDSET>
+					<LEGEND>Locatio</LEGEND>
+					<label name = "acity" for = "acity">City: </label>
+					<input type = "text" name = "acity" id = "acity" required>
+					<label name = "astate" for = "astate">State: </label>
+					<input list = "astates" name = "astate" id = "astate" required>
+					<datalist id = "astates">
+						<option value = "OH"></option>
+						<option value = "KY"></option>
+						<option value = "IN"></option>
+					</datalist>
+				</FIELDSET>
+				<input type = "submit" name = "Finish Order" value = "Finish Order" required>
+				<input type = "reset" name = "Reset Order" value = "Reset Order">*Note: reseting order will require you then to click <B>Specialty Pizzas or Pizza Build up above</B> to add to the order
+			</FIELDSET>
+		</form>
+	</body>
+</html>

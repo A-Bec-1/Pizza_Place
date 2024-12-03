@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+       <head>
+		<title>Form</title>
+		<style type = "text/css">
+			@import url(designs.css);
+		</style>
+	</head>
+	<body>
+		<!--Top of Page-->
+		<a href = "Home.html">
+			<h1 id = "pizzaHead">Pizza Place</h1>
+		</a>
+		<HR>
+		<BR>
+		<!--Form-->
+		<form name = "Application" method = "post" action = "Certificate.html">
+			<P>All Required Fields Marked With An Asterik *</P>
+			<FIELDSET>
+				<LEGEND>Personal Info</LEGEND>
+				<FIELDSET>
+					<LEGEND>Name and Age</LEGEND>
+                	<label name = "fname" for = "fname">First Name: </label>
+                	<input type = "text" name = "fname" id = "fname" required>*
+					<label name = "mname" for = "mname">Middle Name: </label>
+					<input type = "text" name = "mname" id = "mname">
+                	<label name = "lname" for = "lname">Last Name: </label>
+                	<input type = "text" name = "lname" id = "lname" required>*
+					<BR>
+					<label name = "bdate" for = "bdate">Birthdate: </label>
+					<input type = "date" name = "bdate" id = "bdate" required>*
+					<BR>
+					<label name = "aage" for = "aage">Age: </label>
+					<input type = "number" name = "aage" id = "aage" required>*
+				</FIELDSET>
+				<FIELDSET>
+					<LEGEND>Address</LEGEND>
+                	<label name = "astreet" for = "astreet">Address: </label>
+                	<input type = "text" name = "astreet" id = "astreet" required>*
+                	<label name = "astreet2" for = "astreet2">2: </label>
+                	<input type = "text" name = "astreet2" id = "astreet2">
+					<BR>
+					<label name = "acity" for = "acity">City: </label>
+					<input type = "text" name = "acity" id = "acity" required>*
+					<label name = "astate" for = "astate">State: </label>
+					<input list = "astates" name = "astate" id = "astate" required>*
+					<datalist id = "astates">
+						<option value = "OH"></option>
+						<option value = "KY"></option>
+						<option value = "IN"></option>
+					</datalist>
+                	<label name = "azip" for = "azip">Zip Code: </label>
+                	<input type = "number" name = "azip" id = "azip" required>*
+				</FIELDSET>
+				<FIELDSET>
+					<LEGEND>Contact</LEGEND>
+                	<label name = "aemail" for = "aemail">Email: </label>
+                	<input type = "email" name = "aemail" id = "aemail" required>*
+					<BR>
+                	<label name = "aphone" for = "aphone">Phone: </label>
+                	<input type = "tel" name = "aphone" id = "aphone" required>*
+				</FIELDSET>
+			</FIELDSET>
+			<FIELDSET>
+				<LEGEND>Experince Info:</LEGEND>
+				<label name = "aPE" for = "aPE">Previous Experience:</label>
+				<BR>
+				<textarea name = "aPE" id = "aPE"></textarea>
+				<HR>
+				<LEGEND>Education:</LEGEND>
+				<label name = "aE" for = "aE">Previous Experience:</label>
+				<BR>
+				<textarea name = "aE" id = "aE" required></textarea>*
+				<HR>
+				<LEGEND>Why do you want to work here:</LEGEND>
+				<label name = "aWhy" for = "aWhy">Previous Experience:</label>
+				<BR>
+				<textarea name = "aWhy" id = "aWhy" required></textarea>*
+				<HR>
+				<label name = "aResume" for = "aResume">Resume: </label>
+				<input type = "file" name = "aResume" id = "aResume" required>*
+			</FIELDSET>
+			<BR>
+			<input type = "submit" name = "Apply" value = "Apply" required>*		or:
+			<input type = "reset" name = "Reset Application Form" value = "Reset Application Form">
+		</form>
+		<!--Bottom of Page-->
+		<BR><BR><BR><BR>
+		<HR>
+			<TABLE>
+				<TR>
+					<TD class = "button">
+						Call us at: <I>+1(800) 867-5309</I>
+					</TD>
+					<TD class = "button">
+						<a href ="Home.html">Home Page</a>
+					</TD>
+					<TD class = "button">
+						<a href ="Locations.html">Locations</a>
+					</TD>
+				</TR>
+			</TABLE>
+	</body>
+</html>

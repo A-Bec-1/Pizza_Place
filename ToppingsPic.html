@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Extra Toppings</title>
+		<style type = "text/css">
+			@import url(designs.css);
+		</style>
+	</head>
+	<body>
+		<!--Top of Page-->
+		<a href = "Home.html">
+			<h1 id = "pizzaHead">Pizza Place</h1>
+		</a>
+		<HR>
+		<BR>
+		<!--Ordering-->
+		<h2>Ordering Pizza!</h2>
+		<form name = "Base" method = "post" action = "Pickup.html">
+			<FIELDSET>
+				<LEGEND>Toppings</LEGEND>
+                <label name = "Topping" for = "Topping">Cheese: </label>
+                <input type = "checkbox" name = "Topping" id = "Topping">Pepperoni
+                <input type = "checkbox" name = "Topping" id = "Topping">Mushroom
+                <input type = "checkbox" name = "Topping" id = "Topping">Sausage
+                <input type = "checkbox" name = "Topping" id = "Topping">Bacon
+                <input type = "checkbox" name = "Topping" id = "Topping">Bell Pepper
+                <input type = "checkbox" name = "Topping" id = "Topping">Bananna Pepper
+                <input type = "checkbox" name = "Topping" id = "Topping">Jalapeno
+				<BR>
+				<table class = "pricingTable">
+					<TH>
+						<TD>One Topping Free, Additional Toppings Cost $1.99</TD>
+					</TH>
+				</table>
+				<HR>
+				<input type = "submit" name = "Next" value = "Next" required>
+				<input type = "reset" name = "resetIt">
+			</FIELDSET>
+		</form>
+		<P>
+			*Note: All pizzas are 20in*
+		</P>
+	</body>
+</html>
